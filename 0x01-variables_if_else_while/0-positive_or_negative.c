@@ -24,7 +24,7 @@ printf("is zero\n");
 else
 /*final else return 0*/
 {
-printf("is nagative\n");
+printf("is negative\n");
 }
 return (0);
 }
