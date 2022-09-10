@@ -10,11 +10,10 @@
 int main(void)
 {
 int n;
-
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-printf("%u ", n);
-if (n < 0)
+printf("%d ", n);
+if (n > 0)
 {
 printf("is positive\n");
 }
@@ -22,10 +21,10 @@ else if (n == 0)
 {
 printf("is zero\n");
 }
-else if (n > 0)
+else
+/*final else return 0*/
 {
 printf("is nagative\n");
 }
 return (0);
 }
-
