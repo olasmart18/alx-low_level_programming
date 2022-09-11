@@ -1,18 +1,18 @@
 #include<stdio.h>
 /**
 * main - Entry point
-*
+* print to sdtout a-z in reverse format
 * Return: Always 0 (Success)
 */
 int main(void)
-/*print a to z in reverse*/
+
 {
 int ch;
 
-for (ch = 'z' ; ch >= 'a' ; ch--);
-/*return z to a in lowecase*/
+for (ch = 'z' ; ch >= 'a' ; ch--)
+{
 putchar(ch);
-
-printf("\n");
+}
+putchar('\n');
 return (0);
 }
