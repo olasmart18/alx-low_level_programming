@@ -1,23 +1,21 @@
 #include "main.h"
 
 /**
-* main - check the code.
-* @print_alphabet_x10 - this is a function that print alphabet a to z 10times
+* print_alphabet_x10 - this is a function that print alphabet a to z 10times
 *
-* Description : print alphabet 10x
-* Return: Always 0.
+* Return a - z 10x
 */
 void print_alphabet_x10(void)
 {
-	int x, y;
+	int x = 48, y;
 
-	for (x = 1; x <= 10; x++)
+	while (x <= 57)
 	{
-		for (y = 'a'; y <= 'z'; y++)
+		for (y = 97; y < 123; y++)
 		{
 			_putchar(y);
 		}
-		_putchar(x);
+		x++;
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
