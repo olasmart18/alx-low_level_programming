@@ -2,7 +2,7 @@
 /**
 * print_sign - the function prints a sign of number
 * @n: input number or int
-*Returns: 0 if n is zero and returns -1 n is - and + if greater than 0
+*Return: 0 prints '0' if n = 0, -1 prints '-' if n < 0, 1 prints '+' if n > 1
 */
 
 int print_sign(int n)
@@ -17,7 +17,7 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	else ( n < 0)
+	else
 	{
 		_putchar('-');
 		return (-1);
