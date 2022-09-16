@@ -16,8 +16,10 @@ int main(void)
 	for (c = (int) sqrt(num); c > 2; c++)
 	{
 		if (num % c == 0)
+		{
 			printf("%d\n", c);
 		break;
+		}
 	}
 	return (0);
 }
