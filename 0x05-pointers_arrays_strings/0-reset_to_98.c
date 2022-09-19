@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - the function reset the value if integer to 98
- * @m: the input integer
+ * @n: the input integer
  * Return: 0
  */
 
