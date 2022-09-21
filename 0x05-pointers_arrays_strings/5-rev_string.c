@@ -8,5 +8,5 @@
 
 void rev_string(char *s)
 {
-	print_rev(s);
+	strrev(s);
 }
