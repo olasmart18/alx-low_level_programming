@@ -10,8 +10,8 @@ void rev_string(char *s)
 {
 	int i, len;
 	char tmp;
-	len = strlen(s);
 
+	len = strlen(s);
 	for (i = 0; i < len / 2; i++)
 	{
 		tmp = s[i];
