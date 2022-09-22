@@ -4,7 +4,8 @@
 /**
  * string_toupper - function convert string to uppercase
  * @str: string input
- * Return nothing
+ *
+ * Return: string to uppercase
  */
 
 char *string_toupper(char *str)
