@@ -1,4 +1,5 @@
 #include "main.h"
+//#include <stdio.h>
 
 /**
  * strcmp - a function to cmpare 2 strings
@@ -10,19 +11,27 @@
 
 int _strcmp(char *s1, char *s2)
 {
-    int i
+    /*strcmp (s1, s2);*/
+    int i;
+    int cmp = 0;
 
-    for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
+    for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
     {
-        if (s1[i] == s2[i])
+        if (s1[i] != s2[i])
         {
-            return 0;
+            cmp = s2[i] - s1[i];
         }
-        else if (s1[i] < s2[i]);
-        {
-            return -15;
-        }
-        else
-        return 15;
     }
+    //if (cmp == 1)
+    return (cmp);
 }
+/*int main(void)
+{
+    char s1[] = "Hello";
+    char s2[] = "World!";
+
+    printf("%d\n", _strcmp(s1, s2));
+    printf("%d\n", _strcmp(s2, s1));
+    printf("%d\n", _strcmp(s1, s1));
+    return (0);
+}*/
