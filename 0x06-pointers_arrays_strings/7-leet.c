@@ -23,7 +23,7 @@ char *leet(char *str)
 	{
 		while (leetcount < 10)
 	{
-		if (leetAlpha[leetcount] == str[stringcount)
+		if (leetAlpha[leetcount] == str[stringcount])
 	{
 		str[stringcount] = leetNum[leetcount];
 	}
