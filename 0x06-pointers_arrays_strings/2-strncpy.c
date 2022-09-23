@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strncpy - function copy strings
+ * _strncpy - function copy strings
  * @dest: destination string or first string
  * @src: source string or second string
  * @n: sring number to be copied
@@ -18,7 +18,6 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = src[i]
 	}
 
-	w
 	while (i < n)
 	{
 		dest[i] = '\0';
