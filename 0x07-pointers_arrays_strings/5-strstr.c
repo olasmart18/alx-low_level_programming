@@ -3,7 +3,7 @@
 /**
  * _strstr - function that locates a substring
  * @haystack: string to search
- * @neddle: target substring to search for
+ * @needle: target substring to search for
  * Return: pointer to the beginning of the located substring
  */
 
@@ -21,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			x = i;
 			j = 0;
-			
+
 			while (needle[j] != '\0')
 			{
 				if (haystack[x] == needle[j])
