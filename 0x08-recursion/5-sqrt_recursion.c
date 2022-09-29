@@ -9,16 +9,16 @@
 int source(int x, int y)
 {
 
-	if (x * x > y)
-	{
+	if (y * y > x)
 		return (-1);
-	}
-	else if (x * x == y)
-	{
+	
+	else if (y * y == x)
+
 		return (y);
-	}
+
 	else
 		return (source(x, y + 1));
+
 	return (1);
 }
 /**
@@ -30,6 +30,8 @@ int source(int x, int y)
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
+
 		return (0);
+
 	return (source(n, 1));
 }
