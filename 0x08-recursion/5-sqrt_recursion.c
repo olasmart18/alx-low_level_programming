@@ -8,7 +8,6 @@
 
 int source(int x, int y)
 {
-	int i;
 
 	if (x * x > y)
 	{
@@ -19,10 +18,8 @@ int source(int x, int y)
 		return (y);
 	}
 	else
-	{
-		i = source(x, y + 1);
-	return (i);
-	}
+		return (source(x, y + 1));
+	return (1);
 }
 /**
  * _sqrt_recursion - function that returns the natural square root of a number
