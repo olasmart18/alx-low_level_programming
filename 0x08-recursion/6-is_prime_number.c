@@ -33,6 +33,7 @@ int evaluate_num(int num, int iterator)
 
 int is_prime_number(int n)
 {
+	int num;
 	int iterator;
 
 	iterator = 2;

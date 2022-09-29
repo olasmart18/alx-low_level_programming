@@ -8,6 +8,8 @@
 
 int source(int x, int y)
 {
+	int i;
+
 	if (x * x > y)
 	{
 		return (-1);
