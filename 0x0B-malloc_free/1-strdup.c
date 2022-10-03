@@ -1,4 +1,38 @@
 #include "main.h"
+/**
+ * _strlen - function to check for length of a string
+ * @s: string to check
+ * Return: string lenght
+ */
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+
+		return (i);
+}
+
+/**
+ * _strcpy - function to copy string
+ * @dest: destination string
+ * @src: source string
+ * Return: dest
+ */
+
+int _strcpy(char *dest, char *src)
+{
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		dest[i] = src[i];
+
+	}
+	if (dest[i] == '\0')
+		return (dest);
+}
 
 /**
  * _strdup - function to copy and return pointer to new space
@@ -10,7 +44,6 @@
 
 char *_strdup(char *str)
 {
-	int i;
 	char *ptr;
 	int n;
 
@@ -19,15 +52,13 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		str[i] = ptr[i];
-		if (str[i] == '\0')
-			return (str);
-		else
-			return (NULL);
-	}
-	n = str[i];
+	n = _strlen(str) + 1;
 	ptr = (char *)malloc(n * sizeof(char));
+
+	if (ptr == 0)
+	{
+	return (NULL);
+	}
+	_strcpy(ptr, str);
 	return (ptr);
 }
