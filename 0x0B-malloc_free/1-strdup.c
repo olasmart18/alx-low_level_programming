@@ -10,8 +10,10 @@ int _strlen(char *s)
 	int i;
 
 	for (i = 0; s[i] != '\0'; i++)
-
+	{
 		return (i);
+	}
+	return (0);
 }
 
 /**
@@ -30,8 +32,8 @@ int _strcpy(char *dest, char *src)
 		dest[i] = src[i];
 
 	}
-	if (dest[i] == '\0')
-		return (dest);
+	dest[i] = '\0'
+	return (dest);
 }
 
 /**
