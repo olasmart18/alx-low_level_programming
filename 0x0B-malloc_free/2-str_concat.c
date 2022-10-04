@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	int j;
 	int n;
 	char *ptr;
-	
+
 	if (s2 == NULL)
 	{
 		s2 = "";
@@ -40,13 +40,13 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	}
 
-	n =( _strlen(s1) + _strlen(s2) + 1);
+	n = ((_strlen(s1)) + (_strlen(s2) + 1));
 
 	ptr = (char *)malloc(n * sizeof(char));
 
 	if (ptr == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	for (i = 0; *(s1 + i) != '\0'; i++)
@@ -59,5 +59,5 @@ char *str_concat(char *s1, char *s2)
 		ptr[i] = s2[i];
 	}
 
-	return (dest);
+	return (ptr);
 }
