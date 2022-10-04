@@ -31,13 +31,13 @@ char *str_concat(char *s1, char *s2)
 	int n;
 	char *ptr;
 
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
 	if (s1 == NULL)
 	{
 		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 
 	n = ((_strlen(s1)) + (_strlen(s2) + 1));
@@ -49,12 +49,13 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (i = 0; *(s1 + i) != '\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 	{
-		while (*(s2 + j) != '\0')
+		while (s2[j] != '\0')
 		{
 			ptr[i] = s2[j];
 			j++;
+			i++;
 		}
 		ptr[i] = s2[i];
 	}
