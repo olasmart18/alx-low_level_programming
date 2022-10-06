@@ -45,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (; index < (len1 + n); index++)
 	{
-		newMum[index] = s2[index - len1];
+		newMem[index] = s2[index - len1];
 	}
 	newMem[index] = '\0';
 	return (newMem);
