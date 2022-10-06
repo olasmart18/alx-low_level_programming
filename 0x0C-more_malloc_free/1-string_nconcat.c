@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * string_nconcat - functo concatenate to string on coditions
  * @s1: string
@@ -12,9 +11,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int index;
-	unsigned int len1 = 0;
-	unsigned int len2 = 0;
+	unsigned int index, len1 = 0, len2 = 0;
 	char *newMem;
 
 	if (s2 == NULL)
@@ -46,12 +43,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		newMem[index] = s1[index];
 		index++;
 	}
-
 	for (; index < (len1 + n); index++)
 	{
 		newMum[index] = s2[index - len1];
 	}
 	newMem[index] = '\0';
-
 	return (newMem);
 }
