@@ -30,13 +30,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		len2++;
 	}
 
-	if (n >= len2)
+	if (n > len2)
 		n == len2;
 
 	newMem = malloc((len1 + n + 1) * sizeof(char));
 
 	if (newMem == NULL)
-		return (0);
+		return (NULL);
 
 	while (index < len1)
 	{
