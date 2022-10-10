@@ -1,6 +1,8 @@
 #ifndef DOG_H
 #define DOG_H
 
+typedef struct dog dog_t;
+
 /**
  * struct dog - block that contain dog sttributes
  * @name: name of dog
@@ -8,14 +10,13 @@
  * @age: age of dog
  *
  */
-/*typedef struct dog dog_t;*/
 
-typedef struct dog
+struct dog
 {
 	char *name;
-	char *owner;
 	float age;
-}
-dog_t;
+	char *owner;
+};
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
