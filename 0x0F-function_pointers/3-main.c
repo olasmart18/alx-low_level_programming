@@ -3,7 +3,7 @@
 /**
  * main - entry for program
  * @argc: argumenent count
- * argv: array of argument
+ * @argv: array of argument
  *
  * Return: 0
  */
