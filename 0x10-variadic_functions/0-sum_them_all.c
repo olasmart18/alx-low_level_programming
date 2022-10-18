@@ -9,10 +9,10 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	unsigned int sum = 0;
-	int i;
-
+	int sum = 0;
+	unsigned int i;
 	va_list ptr; /* declaring point to the argument list*/
+
 	va_start(ptr, n);
 
 	if (n == 0)
