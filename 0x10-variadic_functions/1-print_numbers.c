@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - function that prints numbers, followed by a new line
- * @seperator: char to seprate string
+ * @separator: char to seprate string
  * @n: number of string passed in
  * Return: pointer to string
  */
